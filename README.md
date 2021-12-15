@@ -1,16 +1,16 @@
-Test Unitaire
-ToDoList
-Groupe 22 sur myges
+# Tests Unitaires
 
-Membres du groupe
+# ToDoList
+
+
+## Membres du groupe
 Naty GHANEM
 Kamelia TAGUEMOUNT
 Zakaria ATTAOUI
 
-Objectif
-le projet consiste a créer une ToDoList pour un Utilisateur avec des tests u
-nitaires
+## Objectif
+le projet consiste a créer une ToDoList pour un Utilisateur avec des tests unitaires
 
-Quoi utiliser: 
-ExpressJs
-
+## Quoi utiliser ?
+- Framework ExpressJs;
+- MongoDB 
