@@ -39,20 +39,20 @@ class User {
     }
 
     ageValidation() {
-        /*
-        // if the age in form dd/mm/YYYY
-        var today = new Date();
-        var birthDate = new Date(dateString);
-        var age = today.getFullYear() - birthDate.getFullYear();
-        var m = today.getMonth() - birthDate.getMonth();
-        if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
-            age--;
-        }*/
+        let dob = new Date(this.age);
+        let month_diff =  Date.now() - dob.getTime();
+        let age_dt = new Date(month_diff);
+        let year = age_dt.getUTCFullYear();
+        let age = Math.abs(year - 1970);
 
-        if (this.age >= 13) {
+
+        if (age >= 13) {
             return true
         }
         return false;
+
+
+        return true;
     }
 
     isValid() {
@@ -65,9 +65,12 @@ class User {
             return 'User valide';
         }
         return 'User in valide';
-
     }
 
 }
+
+const zak = new User('azeaze@gmail.com', 'ATTAOUI', 'Zakaria','zakariapassword', '12/23/1998');
+console.log('zakaria');
+console.log(zak.ageValidation())
 
 module.exports = User;
