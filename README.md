@@ -12,4 +12,4 @@ le projet consiste a créer une ToDoList pour un Utilisateur avec des tests unit
 
 ## Quoi utiliser ?
 - Framework ExpressJs;
-- MongoDB 
+- sqlLite
