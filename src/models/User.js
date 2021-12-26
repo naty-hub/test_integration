@@ -8,7 +8,7 @@ class User {
         this.lastName = lastName;
         this.password = password;
         this.age = age;
-        this.toDoList=toDoList;
+        this.toDoList = toDoList;
     }
 
     mailValidate() {
@@ -56,19 +56,6 @@ class User {
         return true;
     }
 
-    TodoList(name, content) {
-        if (items.length < 10 && content.length < 1000){
-        const item = {
-            name: name,
-            content: content,
-            date: new Date().toJSON()
-        }
-        items.push(item)
-        return items
-        }
-        return 'ToDolist est remplis';
-
-    }
 
     isValid() {
         if (this.mailValidate() === 'Mail valide' &&
