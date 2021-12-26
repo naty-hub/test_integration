@@ -1,6 +1,8 @@
 import UserModel from '../models/user';
 
-export default class UserService{
+const MailService = require('./MailService');
 
+class UserService {
 }
+
 
