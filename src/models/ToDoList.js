@@ -22,8 +22,17 @@ class ToDoList {
             if(!this.items.some(i => i.name === item.name)){
                 if(Math.floor((item.creationDate - this.getLastCreatedTime())/1000/60) > 30){
                     this.items.push(item);
+<<<<<<< Updated upstream
                     if (this.items.length == 7) {
                         return emailSenderService.sendEmail('hello', 'helloo');
+=======
+                    if (this.items.length === 8) {
+<<<<<<< Updated upstream
+                        emailSenderService.sendEmail('hello', 'helloo');
+=======
+                        return emailSenderService.sendEmail('hello', 'helloo');
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
                     }
                     return true
                 }
