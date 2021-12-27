@@ -1,6 +1,5 @@
 class EmailSenderService {
     static sendEmail() {
-        console.log("Sending a email");
     }
 }
 

@@ -1,4 +1,4 @@
-const MailService = require("./MailService");
+const MailService = require("../services/MailService");
 class User {
 
 
