@@ -2,7 +2,7 @@ const User = require('../src/models/User')
 
 const Item = require("../src/models/Item");
 const ToDoList = require("../src/models/ToDoList");
-const { MongoClient } = require('mongodb').MangoClient;
+const { MongoClient } = require('mongodb');
 
 
   describe('Unit tests for our project', () => {
