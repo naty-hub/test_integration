@@ -1,4 +1,4 @@
-const emailSenderService = require("./EmailSenderService")
+const emailSenderService = require("../services/EmailSenderService")
 class ToDoList {
     constructor(name, items) {
         this.name = name;
@@ -6,6 +6,8 @@ class ToDoList {
     }
 
     getLastCreatedTime() {
+        if (this.items.length === 0)
+            return true
         return this.items[this.items.length - 1].creationDate;
     }
 
@@ -22,7 +24,7 @@ class ToDoList {
                 if(Math.floor((item.creationDate - this.getLastCreatedTime())/1000/60) > 30){
                     this.items.push(item);
                     if (this.items.length === 8) {
-                        emailSenderService.sendEmail('hello', 'helloo');
+                        return emailSenderService.sendEmail();
                     }
                     return true
                 }
