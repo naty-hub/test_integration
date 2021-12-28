@@ -42,7 +42,7 @@ describe('Item Class', () => {
         const item3 = new Item('item 3', 'bla bla bla');
         item3.creationDate = new Date("2021-12-25T16:55:53.844Z")
         const toDoList = new ToDoList('user toDoList', [])
-        const user = new User('azeaze@gmail.com', 'ATTAOUI', 'Zakaria','zakariapassword', '12/23/2004', toDoList);
+        const user = new User('azeaze@gmail.com', 'ATTAOUI', 'Zakaria','zakariapassword', '12/11/2004', toDoList);
         toDoList.additem(item1)
 
 

@@ -20,7 +20,7 @@ describe('Unit Tests for Database (MongoDb)', () => {
         const item1 = new Item('item 1', 'bla bla bla');
         const toDoList1 = new ToDoList('user ToDoList', [])
         toDoList1.additem(item1)
-        let user1 = new User('eric202@gmail.com', 'Eric', 'Garcia', 'Passwordpassword', '12/23/1998', toDoList1);
+        let user1 = new User('test_unitaire@gmail.com', 'Test', 'Unitaire', 'Passwordpassword', '10/09/1998', toDoList1);
 
 
         it('should insert User into the Database ', async () => {
