@@ -32,9 +32,6 @@ describe('Unit tests for our project', () => {
 
         });
 
-
-
-
     })
     describe('User Class', () => {
         let user1 = new User('azeaze@gmail.com', 'ATTAOUI', 'Zakaria', 'zakariapassword', '12/23/2004', []);

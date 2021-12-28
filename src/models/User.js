@@ -1,14 +1,25 @@
 const MailService = require("./MailService");
+const EmailSenderService = require("./EmailSenderService");
+
 class User {
 
 
-    constructor(email, firstName, lastName, password, age, toDoList) {
+    constructor(email, firstName, lastName, password, age, toDoList, emails) {
         this.email = email;
         this.firstName = firstName;
         this.lastName = lastName;
         this.password = password;
         this.age = age;
         this.toDoList = toDoList;
+        this.emails = emails = 'You must call verifyMails to check your emails';
+    }
+
+    verifyMails() {
+        if (Object.keys(this.toDoList.items).length === 8){
+            this.emails = EmailSenderService.message
+            return true
+        }
+        return this.emails = 'There is nothing '
     }
 
     mailValidate() {
