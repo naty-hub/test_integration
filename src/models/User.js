@@ -1,5 +1,5 @@
-const MailService = require("./MailService");
-const EmailSenderService = require("./EmailSenderService");
+const MailService = require("../services/MailService");
+const EmailSenderService = require("../services/EmailSenderService");
 
 class User {
 

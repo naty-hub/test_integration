@@ -1,11 +1,16 @@
 const Item = require("../src/models/Item");
 const ToDoList = require("../src/models/ToDoList");
-const EmailSenderService = require("../src/models/EmailSenderService");
+const EmailSenderService = require("../src/services/EmailSenderService");
 const User = require('../src/models/User')
 
-let mock = jest.mock("../src/models/EmailSenderService");
+let mock = jest.mock("../src/services/EmailSenderService");
 
-
+describe('Mocks', () => {
+    it("mocks module EmailSenderService", () => {
+        EmailSenderService.sendEmail = jest.fn();
+        expect(EmailSenderService.sendEmail.mock).toBeTruthy();
+    });
+})
 
 describe('ToDoList Class', () => {
     const item1 = new Item('test', 'bla bla bla');
@@ -52,11 +57,5 @@ describe('ToDoList Class', () => {
 
     })
 
-    describe('Mocks', () => {
-        it("mocks module EmailSenderService", () => {
-            EmailSenderService.sendEmail = jest.fn();
-            expect(EmailSenderService.sendEmail.mock).toBeTruthy();
-        });
-    })
 
 })

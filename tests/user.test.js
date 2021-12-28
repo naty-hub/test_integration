@@ -2,7 +2,7 @@ const User = require('../src/models/User')
 
 
 describe('User Class', () => {
-    let user1 = new User('eric202@gmail.com', 'Eric', 'Garcia', 'Passwordpassword', '12/23/1998', []);
+    let user1 = new User('test202@gmail.com', 'Test', 'Unitaire', 'Passwordpassword', '12/12/2004', []);
 
     it(' Should return true for name', () => {
         expect(user1.firstNameNotEmpty(user1.firstName)).toEqual(true)

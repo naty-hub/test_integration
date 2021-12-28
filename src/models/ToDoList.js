@@ -1,4 +1,4 @@
-const emailSenderService = require("./EmailSenderService")
+const emailSenderService = require("../services/EmailSenderService")
 class ToDoList {
     constructor(name, items) {
         this.name = name;
