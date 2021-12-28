@@ -1,9 +1,9 @@
 const Item = require("../src/models/Item");
 const ToDoList = require("../src/models/ToDoList");
-const EmailSenderService = require("../src/models/EmailSenderService");
+const EmailSenderService = require("../src/services/EmailSenderService");
 const User = require('../src/models/User')
 
-let mock = jest.mock("../src/models/EmailSenderService");
+let mock = jest.mock("../src/services/EmailSenderService");
 
 
 
