@@ -40,7 +40,7 @@ toDoList1.additem(item5)
 toDoList1.additem(item6)
 toDoList1.additem(item7)
 toDoList1.additem(item8)
-console.log(rafik.verifyMails())
+rafik.verifyMails()
 
 
 // console.log(toDoList1.getLastCreatedTime())

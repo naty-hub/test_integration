@@ -24,7 +24,7 @@ class ToDoList {
                 if(Math.floor((item.creationDate - this.getLastCreatedTime())/1000/60) > 30){
                     this.items.push(item);
                     if (this.items.length === 8) {
-                        emailSenderService.sendEmail();
+                        return emailSenderService.sendEmail();
                     }
                     return true
                 }
