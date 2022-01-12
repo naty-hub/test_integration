@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: npm install express --save 
-      - run: make start
+      - run: docker-compose up -d
       - run: npm test
       - name: Check out repository code
         uses: actions/checkout@v2
@@ -14,4 +14,4 @@ jobs:
       - name: List files in the repository
         run: |
           ls ${{ github.workspace }}
-      - run: make stop
+ 
