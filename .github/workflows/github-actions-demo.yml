@@ -4,10 +4,11 @@ jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
-      - name: install dependencies
-        run: npm install express --save 
-      - name: Lance docker
-        run: make start
-      - name: Lance test
-        run: npm test
+      - name: Checkout code
+        uses: action/checkout@v2
+      - name: install dependencies/ Lance docker/ Lance test
+        run: |
+          npm install express --save 
+          make start
+          npm test
  
