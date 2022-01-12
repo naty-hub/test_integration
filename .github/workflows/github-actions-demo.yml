@@ -5,6 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: npm install express --save 
+      - run: make start
       - run: npm test
       - name: Check out repository code
         uses: actions/checkout@v2
