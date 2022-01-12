@@ -10,7 +10,7 @@ jobs:
     steps:
       - run: npm install express --save 
       - name: Hello world action step
-      - run: docker-compose up -d
+        run: make start
       - run: npm test
       - name: Check out repository code
         uses: actions/checkout@v2
