@@ -3,8 +3,13 @@ on: [push]
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        shell: bash
+        working-directory: scripts
     steps:
       - run: npm install express --save 
+      - name: Hello world action step
       - run: docker-compose up -d
       - run: npm test
       - name: Check out repository code
