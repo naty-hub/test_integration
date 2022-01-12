@@ -9,6 +9,7 @@ jobs:
       - name: install dependencies/ Lance docker/ Lance test
         run: |
           npm install express --save 
+          npm install --save-dev jest
           make start
           npm test
  
